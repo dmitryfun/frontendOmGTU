@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная 2 — Макет по БЭМ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <header class="page__header header">
+    <div class="header__brand">НордЛаб</div>
+    <nav class="header__nav nav">
+      <a class="nav__link" href="#about">О нас</a>
+      <a class="nav__link" href="#features">Возможности</a>
+      <a class="nav__link" href="#cases">Кейсы</a>
+      <a class="nav__link" href="#team">Команда</a>
+      <a class="nav__link nav__link--primary" href="#cta">Связаться</a>
+    </nav>
+  </header>
+
+  <main class="page__content">
+    <section class="hero" id="top">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Цифровое агентство</p>
+        <h1 class="hero__title">Создаем понятные интерфейсы с упором на данные</h1>
+        <p class="hero__text">Разрабатываем веб-продукты и аналитические панели для технологических компаний. Работаем по гибкой методологии и показываем прогресс каждую неделю.</p>
+        <div class="hero__actions">
+          <a class="button" href="#cta">Обсудить проект</a>
+          <a class="button button--ghost" href="#cases">Смотреть кейсы</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img class="hero__image" src="img/hero-abstract.svg" alt="Абстрактный фон">
+        <div class="hero__badge">5 секций · БЭМ · адаптив</div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section__header">
+        <p class="section__eyebrow">01 · О нас</p>
+        <h2 class="section__title">Мы помогаем командам быстрее проверять гипотезы</h2>
+        <p class="section__subtitle">Небольшая команда дизайнеров и разработчиков с опытом в fintech, edtech и e-commerce.</p>
+      </div>
+      <div class="about__grid">
+        <article class="card card--em">Собираем продукты из готовых модулей, чтобы не тратить недели на базовые сценарии.</article>
+        <article class="card">Тестируем концепции на реальных пользователях и фиксируем метрики.</article>
+        <article class="card">Строим дизайн-системы, которые масштабируются вместе с вашим сервисом.</article>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="section__header">
+        <p class="section__eyebrow">02 · Возможности</p>
+        <h2 class="section__title">Опора на данные и аккуратный фронтенд</h2>
+      </div>
+      <div class="features__list">
+        <article class="feature">
+          <img class="feature__image" src="img/feature-1.svg" alt="Шаги"> 
+          <div class="feature__content">
+            <h3 class="feature__title">Быстрый онбординг</h3>
+            <p class="feature__text">Четкая структура директорий, reset.css и понятные БЭМ-имена ускоряют подключение новых разработчиков.</p>
+          </div>
+        </article>
+        <article class="feature">
+          <img class="feature__image" src="img/feature-2.svg" alt="Дэшборд"> 
+          <div class="feature__content">
+            <h3 class="feature__title">Аналитика из коробки</h3>
+            <p class="feature__text">Подготовленные шаблоны для дашбордов сокращают время на визуализацию ключевых метрик.</p>
+          </div>
+        </article>
+        <article class="feature">
+          <img class="feature__image" src="img/feature-3.svg" alt="Слои"> 
+          <div class="feature__content">
+            <h3 class="feature__title">Продуманные сценарии</h3>
+            <p class="feature__text">Дизайн-система и гайдлайны по отступам исключают визуальный хаос и обеспечивают единообразие.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cases" id="cases">
+      <div class="section__header">
+        <p class="section__eyebrow">03 · Кейсы</p>
+        <h2 class="section__title">Короткие истории о решенных задачах</h2>
+      </div>
+      <div class="cases__grid">
+        <article class="case">
+          <h3 class="case__title">Аналитика для SaaS</h3>
+          <p class="case__text">Собрали единую панель для продукта, сократили время подготовки отчетов на 60%.</p>
+          <span class="case__meta">4 спринта · 12 экранов</span>
+        </article>
+        <article class="case">
+          <h3 class="case__title">Редизайн маркетплейса</h3>
+          <p class="case__text">Улучшили конверсию корзины на 8% за счет понятных CTA и упрощенного потока оплаты.</p>
+          <span class="case__meta">3 спринта · 18 экранов</span>
+        </article>
+        <article class="case">
+          <h3 class="case__title">Edu платформа</h3>
+          <p class="case__text">Создали библиотеку компонентов, которая ускорила выпуск новых курсов в два раза.</p>
+          <span class="case__meta">5 спринтов · 26 экранов</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section team" id="team">
+      <div class="section__header">
+        <p class="section__eyebrow">04 · Команда</p>
+        <h2 class="section__title">Работаем короткими циклами и держим связь</h2>
+      </div>
+      <div class="team__list">
+        <div class="badge">UX</div>
+        <div class="badge">Frontend</div>
+        <div class="badge">Analytics</div>
+        <div class="badge">QA</div>
+        <div class="badge">PM</div>
+      </div>
+    </section>
+
+    <section class="section cta" id="cta">
+      <div class="cta__content">
+        <h2 class="cta__title">Расскажите о задаче</h2>
+        <p class="cta__text">Напишите нам пару строк — вернемся с планом действий и сроками в течение двух рабочих дней.</p>
+        <form class="cta__form" action="#" method="post">
+          <div class="cta__row">
+            <label class="cta__label" for="name">Имя</label>
+            <input class="cta__input" id="name" name="name" type="text" placeholder="Мария" required>
+          </div>
+          <div class="cta__row">
+            <label class="cta__label" for="email">Email</label>
+            <input class="cta__input" id="email" name="email" type="email" placeholder="hi@nordlab.ru" required>
+          </div>
+          <div class="cta__row">
+            <label class="cta__label" for="message">Задача</label>
+            <textarea class="cta__input cta__input--textarea" id="message" name="message" rows="3" placeholder="Коротко опишите запрос" required></textarea>
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer footer">
+    <p class="footer__text">НордЛаб · 2025 · адаптивный макет</p>
+  </footer>
+</body>
+</html>

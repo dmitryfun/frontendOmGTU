@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная 1 — Базовая страница</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="logo">Frontend</div>
+    <nav class="nav">
+      <a href="#intro">О проекте</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#table">Таблица</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section id="intro" class="section">
+      <h1>Добро пожаловать</h1>
+      <p>Это простая страница на тему путешествий по Европе. Здесь есть изображение, список полезных ссылок и таблица маршрутов.</p>
+      <ul class="links-list">
+        <li><a href="https://www.dmitry.com" target="_blank" rel="noreferrer">Внешний сайт</a></li>
+        <li><a href="mailto:admin@dmitry.com">Написать письмо</a></li>
+        <li><a href="tel:+78005553535">Позвонить</a></li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Галерея</h2>
+      <div class="card">
+        <img src="https://resize.tripster.ru/IbvVKbL-SJqn-vODIGu1zqnxyqY=/fit-in/1600x900/filters:no_upscale()/https://cdn.tripster.ru/photos/00732a0e-c075-41fa-bc4e-bc0d7ad1bb05.jpg" alt="Город с каналом" class="hero-image">
+        <p>Уютные каналы Амстердама вдохновляют на прогулки в любое время года.</p>
+      </div>
+      <ol class="highlights">
+        <li>Старинная архитектура и узкие улочки</li>
+        <li>Кафе с видом на воду</li>
+        <li>Велосипедные маршруты для коротких поездок</li>
+      </ol>
+    </section>
+
+    <section id="table" class="section">
+      <h2>Маршруты</h2>
+      <table class="routes-table">
+        <thead>
+          <tr>
+            <th>Город</th>
+            <th>Страна</th>
+            <th>Дни</th>
+            <th>Бюджет (€)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Амстердам</td>
+            <td>Нидерланды</td>
+            <td>3</td>
+            <td>420</td>
+          </tr>
+          <tr>
+            <td>Прага</td>
+            <td>Чехия</td>
+            <td>4</td>
+            <td>360</td>
+          </tr>
+          <tr>
+            <td>Берлин</td>
+            <td>Германия</td>
+            <td>2</td>
+            <td>290</td>
+          </tr>
+          <tr>
+            <td>Копенгаген</td>
+            <td>Дания</td>
+            <td>3</td>
+            <td>510</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>2025 · учебный пример</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная 3 — Работа с таблицей и слайдер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">Данные маршрутов</div>
+    <nav class="header__nav">
+      <a href="#table">Таблица</a>
+      <a href="#slider">Слайдер</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section id="table" class="panel">
+      <div class="panel__header">
+        <div>
+          <p class="eyebrow">Задание 1</p>
+          <h1>Управление таблицей</h1>
+          <p class="muted">Добавляйте и удаляйте записи. Состояние хранится в localStorage.</p>
+        </div>
+        <div class="badge">autosave</div>
+      </div>
+
+      <form class="form" id="route-form" novalidate>
+        <div class="form__row">
+          <label for="city">Город</label>
+          <input id="city" name="city" type="text" placeholder="Прага" required>
+          <p class="form__error" data-error-for="city"></p>
+        </div>
+        <div class="form__row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="city@trip.com" required>
+          <p class="form__error" data-error-for="email"></p>
+        </div>
+        <div class="form__row">
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="tel" placeholder="+420 555 11 22" required>
+          <p class="form__error" data-error-for="phone"></p>
+        </div>
+        <button class="button" type="submit">Добавить</button>
+      </form>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Город</th>
+              <th>Email</th>
+              <th>Телефон</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="slider" class="panel">
+      <div class="panel__header">
+        <div>
+          <p class="eyebrow">Задание 2</p>
+          <h2>Слайдер с автопрокруткой</h2>
+        </div>
+        <div class="controls">
+          <button class="round" id="prev" aria-label="Предыдущий слайд">‹</button>
+          <button class="round" id="next" aria-label="Следующий слайд">›</button>
+        </div>
+      </div>
+      <div class="slider" data-auto="5000">
+        <div class="slider__track" id="slides">
+          <article class="slide slide--blue">
+            <h3>Северный маршрут</h3>
+            <p>Копенгаген — Осло — Стокгольм. 7 дней, много кофе и панорамных видов.</p>
+          </article>
+          <article class="slide slide--purple">
+            <h3>Центральная Европа</h3>
+            <p>Прага — Вена — Будапешт. Классические кварталы и тёплые термы.</p>
+          </article>
+          <article class="slide slide--green">
+            <h3>Средиземноморье</h3>
+            <p>Барселона — Ницца — Рим. Морские прогулки и гастрономические ярмарки.</p>
+          </article>
+          <article class="slide slide--pink">
+            <h3>Горные тропы</h3>
+            <p>Инсбрук — Цюрих — Шамони. Маршруты для треккинга с панорамами Альп.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">2024 · localStorage + slider</footer>
+  <script src="script.js"></script>
+</body>
+</html>

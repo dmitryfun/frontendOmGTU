@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная 4 — Асинхронный JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div>
+      <p class="eyebrow">Асинхронные запросы</p>
+      <h1>Список заметок с JSONPlaceholder</h1>
+      <p class="muted">Данные загружаются через fetch. Можно обновить список и увидеть индикатор загрузки.</p>
+    </div>
+    <button class="button" id="reload">Обновить</button>
+  </header>
+
+  <main class="content">
+    <div id="status" class="status">Ожидаем загрузку…</div>
+    <div id="cards" class="grid" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer">Источник: jsonplaceholder.typicode.com/posts?_limit=8</footer>
+  <script src="script.js"></script>
+</body>
+</html>
