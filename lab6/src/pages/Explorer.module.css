@@ -1,0 +1,196 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  padding: 1rem 0;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #9bb7ff;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.title {
+  margin: 0.25rem 0 0.4rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.desc {
+  margin: 0;
+  color: rgba(231, 236, 245, 0.78);
+  max-width: 760px;
+}
+
+.statusRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.pill {
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(231, 236, 245, 0.9);
+  font-weight: 700;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  color: rgba(231, 236, 245, 0.75);
+  font-weight: 700;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.25);
+  color: #e7ecf5;
+  font-size: 1rem;
+}
+
+.field input:focus {
+  outline: 2px solid rgba(249, 217, 118, 0.35);
+}
+
+.filterRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem;
+}
+
+.filterButton {
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #e7ecf5;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+.filterButton:hover {
+  transform: translateY(-1px);
+  border-color: rgba(249, 217, 118, 0.35);
+}
+
+.filterActive {
+  background: linear-gradient(135deg, rgba(249, 217, 118, 0.2), rgba(243, 159, 134, 0.18));
+  border-color: rgba(249, 217, 118, 0.45);
+  box-shadow: 0 12px 24px rgba(243, 159, 134, 0.2);
+}
+
+.muted,
+.error {
+  margin: 0.25rem 0;
+  color: rgba(231, 236, 245, 0.75);
+}
+
+.error {
+  color: #ffb4a2;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.card {
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.cardSubtitle {
+  margin: 0.15rem 0 0;
+  color: rgba(231, 236, 245, 0.6);
+  letter-spacing: 0.06em;
+}
+
+.thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.cardDesc {
+  margin: 0;
+  color: rgba(231, 236, 245, 0.8);
+  line-height: 1.45;
+  min-height: 60px;
+}
+
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chip {
+  padding: 0.35rem 0.6rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e7ecf5;
+}
+
+@media (max-width: 640px) {
+  .controls {
+    padding: 0.85rem;
+  }
+
+  .cardTop {
+    flex-direction: column;
+  }
+
+  .thumb {
+    align-self: flex-start;
+  }
+}

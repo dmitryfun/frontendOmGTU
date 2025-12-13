@@ -1,0 +1,244 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #9bb7ff;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.title {
+  margin: 0.2rem 0 0.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.subtitle {
+  margin: 0;
+  color: rgba(231, 236, 245, 0.75);
+  max-width: 720px;
+  line-height: 1.5;
+}
+
+.readout {
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  min-width: 180px;
+  text-align: right;
+}
+
+.readoutLabel {
+  margin: 0;
+  color: rgba(231, 236, 245, 0.68);
+}
+
+.readoutValue {
+  margin: 0.15rem 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.readoutHint {
+  margin: 0;
+  color: rgba(231, 236, 245, 0.7);
+}
+
+.presetGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.presetCard {
+  text-align: left;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: #e7ecf5;
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  transition: transform 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.presetCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(249, 217, 118, 0.3);
+}
+
+.presetActive {
+  background: linear-gradient(135deg, rgba(249, 217, 118, 0.2), rgba(243, 159, 134, 0.15));
+  border-color: rgba(249, 217, 118, 0.45);
+  box-shadow: 0 16px 28px rgba(243, 159, 134, 0.2);
+}
+
+.presetTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.presetName {
+  margin: 0;
+  font-weight: 800;
+}
+
+.presetStats {
+  margin: 0.45rem 0 0;
+  color: rgba(231, 236, 245, 0.75);
+}
+
+.pill {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: 700;
+  color: #fefefe;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.controlCard {
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  gap: 0.6rem;
+}
+
+.controlHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controlTitle {
+  margin: 0;
+  font-weight: 800;
+}
+
+.controlValue {
+  color: #f9d976;
+  font-weight: 800;
+}
+
+.controlCard input[type='range'] {
+  accent-color: #f39f86;
+  width: 100%;
+}
+
+.extraSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.extraTitle {
+  margin: 0;
+  font-weight: 800;
+}
+
+.extras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.6rem;
+}
+
+.extraCard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.extraCard input {
+  width: 18px;
+  height: 18px;
+}
+
+.extraLabel {
+  margin: 0;
+  font-weight: 700;
+}
+
+.extraTip {
+  margin: 0.1rem 0 0;
+  color: rgba(231, 236, 245, 0.7);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.stepGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.stepCard {
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  display: grid;
+  gap: 0.35rem;
+}
+
+.stepHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.stepTitle {
+  margin: 0;
+  font-weight: 800;
+}
+
+.stepDetail {
+  margin: 0;
+  color: rgba(231, 236, 245, 0.75);
+  line-height: 1.4;
+}
+
+@media (max-width: 780px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .readout {
+    align-self: stretch;
+    text-align: left;
+  }
+}
